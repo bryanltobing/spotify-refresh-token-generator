@@ -88,9 +88,9 @@ export const SpotifyRefreshTokenGeneratorForm = () => {
   }, [form, resetField]);
 
   const onSubmit = (values: z.infer<typeof formSchema>) => {
-    toast.success("Form submitted!", {
-      description: "Check the console for the form values.",
-    });
+    localStorage.setItem("spotify_client_id", values.clientId);
+    localStorage.setItem("spotify_client_secret", values.clientSecret);
+    localStorage.setItem("redirect_uri", values.redirectUri);
 
     window.location.href = `https://accounts.spotify.com/authorize?${qs.stringify(
       {
@@ -181,6 +181,7 @@ export const SpotifyRefreshTokenGeneratorForm = () => {
                         ) : (
                           <Copy className="h-4 w-4" />
                         )}
+                        <span className="sr-only">Copy redirect URI</span>
                       </Button>
                     </div>
                   </FormControl>
