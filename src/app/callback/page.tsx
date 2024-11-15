@@ -13,9 +13,5 @@ export default async function Callback({
   if (!code.success) {
     notFound();
   }
-  return (
-    <div className="p-4 pt-24 max-w-4xl mx-auto">
-      <SpotifyRefreshTokenViewerCard code={code.data} />
-    </div>
-  );
+  return <SpotifyRefreshTokenViewerCard code={code.data} />;
 }
