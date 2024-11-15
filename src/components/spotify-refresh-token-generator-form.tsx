@@ -210,7 +210,16 @@ export const SpotifyRefreshTokenGeneratorForm = () => {
                   <div className="mb-4">
                     <FormLabel className="text-base">Scopes</FormLabel>
                     <FormDescription>
-                      Select the permissions you need for your application.
+                      Select the{" "}
+                      <a
+                        className="text-primary hover:underline"
+                        href="https://developer.spotify.com/documentation/general/guides/scopes/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        permissions
+                      </a>{" "}
+                      you need for your application.
                     </FormDescription>
                   </div>
                   <div className="grid grid-cols-2 gap-4 border p-4">
