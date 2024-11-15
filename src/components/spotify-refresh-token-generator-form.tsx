@@ -113,9 +113,18 @@ export const SpotifyRefreshTokenGeneratorForm = () => {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Spotify Refresh Token Generator</CardTitle>
+        <CardTitle>Generate Your Refresh Token</CardTitle>
         <CardDescription>
-          Generate a refresh token for Spotify API access.
+          Make sure you have a Spotify Developer account and have created an
+          application in the{" "}
+          <a
+            className="text-primary hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://developer.spotify.com/dashboard"
+          >
+            Spotify Developer Dashboard.
+          </a>
         </CardDescription>
       </CardHeader>
       <CardContent>
