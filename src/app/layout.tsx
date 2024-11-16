@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Spotify Refresh Token Generator",
   description:
     "Get a Spotify refresh token fast for easy API access. No hassle.",
+  metadataBase: new URL("https://spotify-refresh-token-generator.vercel.app"),
 };
 
 const currentYear = new Date().getFullYear();
